@@ -1,0 +1,66 @@
+{
+  "config": null,
+  "data_dir": "D:\\DeepLearning\\DL\\csc4005-lab3-1dcnn-tyanzuq2811\\.tmp_ci_urbansound",
+  "project": "csc4005-lab3-urbansound-1dcnn",
+  "run_name": "ci_smoke",
+  "model_name": "mfcc_1dcnn",
+  "feature_type": "mfcc",
+  "sample_rate": 8000,
+  "duration": 0.5,
+  "n_fft": 512,
+  "hop_length": 256,
+  "n_mfcc": 16,
+  "n_mels": 64,
+  "hidden_channels": [
+    16,
+    32,
+    32
+  ],
+  "dropout": 0.35,
+  "optimizer": "adamw",
+  "scheduler": "plateau",
+  "lr": 0.001,
+  "weight_decay": 0.0001,
+  "epochs": 1,
+  "batch_size": 8,
+  "patience": 4,
+  "seed": 42,
+  "train_folds": [
+    1
+  ],
+  "val_folds": [
+    9
+  ],
+  "test_folds": [
+    10
+  ],
+  "max_train_per_class": 2,
+  "max_eval_per_class": 2,
+  "augment": false,
+  "cache_dir": "D:\\DeepLearning\\DL\\csc4005-lab3-1dcnn-tyanzuq2811\\.tmp_ci_cache",
+  "num_workers": 0,
+  "device": "cpu",
+  "use_wandb": false,
+  "wandb_mode": "online",
+  "num_classes": 10,
+  "class_names": [
+    "air_conditioner",
+    "car_horn",
+    "children_playing",
+    "dog_bark",
+    "drilling",
+    "engine_idling",
+    "gun_shot",
+    "jackhammer",
+    "siren",
+    "street_music"
+  ],
+  "device_resolved": "cpu",
+  "resolved_data_dir": "D:\\DeepLearning\\DL\\csc4005-lab3-1dcnn-tyanzuq2811\\.tmp_ci_urbansound",
+  "input_channels": 16,
+  "train_size": 20,
+  "val_size": 20,
+  "test_size": 20,
+  "total_params": 9530,
+  "trainable_params": 9530
+}

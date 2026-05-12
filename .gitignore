@@ -5,19 +5,31 @@ __pycache__/
 venv/
 .env
 
-# Data and generated artifacts
+# Data – KHÔNG push dữ liệu lên GitHub
 data/
 .cache/
-outputs/*
-!outputs/.gitkeep
 *.zip
 *.tar.gz
+
+# Model weights – quá lớn, không push
 *.pt
 *.pth
 *.ckpt
 
+# Outputs – cho phép png, json, csv (báo cáo cần) nhưng loại bỏ model weights
+# Cấu trúc: outputs/<run_name>/{curves.png, confusion_matrix.png, metrics.json, history.csv, used_config.json}
+# best_model.pt đã bị chặn bởi *.pt ở trên
+
 # W&B
 wandb/
+
+# CI temp files
+.tmp_ci_cache/
+.tmp_ci_urbansound/
+
+# Debug / logs
+tea_debug.log
+*.log
 
 # OS / IDE
 .DS_Store
