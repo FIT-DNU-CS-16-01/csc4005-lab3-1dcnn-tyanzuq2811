@@ -4,7 +4,7 @@
 
 - Họ tên: Lê Tuấn Dũng
 - Mã sinh viên: 1771020189
-- Lớp: CSC4005
+- Lớp: KHTM 17-01
 - Link GitHub repo: https://github.com/FIT-DNU-CS-16-01/csc4005-lab3-1dcnn-tyanzuq2811.git
 - Link W&B project: https://wandb.ai/models-dai-nam-university/csc4005-lab3-urbansound-1dcnn
 
